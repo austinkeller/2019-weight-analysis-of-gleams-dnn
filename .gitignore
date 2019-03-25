@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+.rstudio
+.RData
+.Rhistory
+.DS_Store
+kill-container-*.sh
