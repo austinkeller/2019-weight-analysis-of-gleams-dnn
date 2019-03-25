@@ -2,6 +2,10 @@
 
 An investigation of the GLEAMS embedder using WeightWatcher
 
+## Viewing results
+
+Checkout the [notebook](notebook.ipynb)
+
 ## Getting started
 First, [install the Docker client](http://docs.docker.com) for your system.
 
