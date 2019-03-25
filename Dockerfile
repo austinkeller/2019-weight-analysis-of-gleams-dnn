@@ -25,8 +25,3 @@ WORKDIR /home/jovyan
 #  see https://pip.readthedocs.io/en/1.1/requirements.html#requirements-file-format
 ADD requirements.txt /src/
 RUN pip install -r /src/requirements.txt
-
-
-# Custom R packages
-ADD install_packages.r /src/
-RUN Rscript /src/install_packages.r
