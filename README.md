@@ -1,12 +1,12 @@
 # 2019 WeightWatcher on GLEAMS
 
-An investigation of the GLEAMS embedder using WeightWatcher
+An investigation of the GLEAMS embedder using WeightWatcher, an empirical metric for deep learning complexity based on Random Matrix Theory
 
-## Viewing results
+## View the results
 
-Checkout the [notebook](notebook.ipynb)
+Check out the [notebook](notebook.ipynb)
 
-## Getting started
+## Running the analysis
 First, [install the Docker client](http://docs.docker.com) for your system.
 
 Then, in a terminal, change to the project directory (the one containing this file) and:
