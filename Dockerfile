@@ -1,5 +1,5 @@
 
-FROM jupyter/datascience-notebook:83ed2c63671f
+FROM jupyter/tensorflow-notebook:41e066e5caa8
 
 
 MAINTAINER Austin Keller <austin474@gmail.com>
@@ -11,6 +11,14 @@ USER root
 # Install system packages here, if necessary
 # RUN apt-get update -y && apt-get install -y your-desired-packages
 
+RUN conda install --quiet --yes \
+    pytorch \
+    torchvision \
+    cudatoolkit=9.0 \
+    -c pytorch && \
+    conda clean -tipsy && \
+    fix-permissions $CONDA_DIR && \
+    fix-permissions /home/$NB_USER
 
 USER $NB_USER
 
